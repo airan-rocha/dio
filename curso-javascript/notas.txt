@@ -1,0 +1,31 @@
+comando do git para restaurar commit
+
+git log --oneline  //para pegar o código do commit
+
+git reset código_commit
+
+git restore *     //para restaurar todos os arquivos para a versão do commit atual.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Criando Arrays:aaa
