@@ -1,0 +1,8 @@
+Design patterns são soluções reutilizáveis que não se limitam a um unico problema.
+Elas podem ser reutilizadas para diversos tipo de problemas.
+Patterns mais utilizados:
+-factory
+-singleton
+-decorator
+-observer
+-module
