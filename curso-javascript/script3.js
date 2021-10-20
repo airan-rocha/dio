@@ -113,4 +113,9 @@ console.log(numeros);
 
 console.log(numeros.flat(2));  //plano: irá deixar os sub-arrays no mesmo nível dos arrays.
 
-console.log(numeros.flatMap(value => [(2, value) * 2]));
+var numeros = [1,2,3,4,5];
+
+console.log(numeros.flatMap((value) => [[value * 2]]));
+
+console.log(numeros.reverse());
+

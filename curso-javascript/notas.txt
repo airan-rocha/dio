@@ -6,6 +6,22 @@ git reset código_commit
 
 git restore *     //para restaurar todos os arquivos para a versão do commit atual.
 
+######
+
+Comando git para adcionar/trocar servidor remote
+
+git remote -v     //para ver o endereço do servidores remotos caso haja
+
+git remote remove origin  // para remover o atual servidor remote, origin é a variável com o endereço
+
+git remote add origin http://...  //adiciona a variável origin com o endereço do servidor remote
+
+git branch -v  //para ver o nome da branch atual
+
+git branch -M "main"  //para alterar o nome da branch, no caso para main
+
+git push origin main // para enviar os arquivos para o servido remoto
+
 **********************************
 
 Design patterns são soluções reutilizáveis que não se limitam a um unico problema.
@@ -37,6 +53,7 @@ arr.slice(2) //3 4 5   - irá retornar a partir do array 3
 arr.slice(-2)  //4 5 - negativo irá retornar de trás para frente
 arr.slice(2,3) //3  - irá retornar o indice 2 até a posição 3 do array
 arr.map((value) => value * 2) //2,4,6,8,10 - irá retornar os valores do indice por 2
+arr.reverse()  //5,4,3,2,1
 
 
 var numeros = [1,2,3,[4,5,[6,7]]];
