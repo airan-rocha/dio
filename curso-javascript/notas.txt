@@ -28,4 +28,20 @@ git restore *     //para restaurar todos os arquivos para a versão do commit at
 
 
 
-Criando Arrays:aaa
+Criando Arrays
+
+var nome = Array();
+
+unshift() = insere o item no inicio do array
+push() = insere o item no final do array
+shift() = remove o primeiro item do array
+pop() = remove o último item do array
+splice(index, 1) = remove o item do array apartir do index
+splice(2, 1, "first") = irá alterar o item 3 do array para "first"
+slice() = fatiar, remove itens do array.
+
+arr = [1,2,3,4,5];
+
+arr.slice(2) //3 4 5   - irá retornar a partir do array 3
+arr.slice(-2)  //4 5 - negativo irá retornar de trás para frente
+arr.slice(2,3) //3  - irá retornar o indice 2 até a posição 3 do array

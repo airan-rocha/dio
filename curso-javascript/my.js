@@ -35,3 +35,22 @@ pull.mordida = "medio";
 pull.mordida = "fraca";
 
 console.log(pull);
+
+var pessoas = Array("Airan", "Valdirene");
+
+console.log(`Array pessoas ${pessoas}`);
+
+pessoas.push("Gabriele");
+pessoas.unshift("Julia");
+
+// pessoas.splice(2, 1);
+
+console.log(`Array pessoas ${pessoas}`);
+
+pessoas.splice(2, 1, "eu");
+
+console.log(`Array pessoas ${pessoas}`);
+
+var arr = [1,2,3,4,5];
+
+console.log(arr.slice(2, 3))
