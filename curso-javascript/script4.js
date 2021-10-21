@@ -16,3 +16,7 @@ log(`subtração: ${a}-${b}=${sub(a, b)}`);
 function log(log) {
     console.log(log);
 };
+
+var sum = (a, b = 0) => a + b;
+
+console.log(sum(5, 4));
