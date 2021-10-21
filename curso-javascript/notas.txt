@@ -22,7 +22,7 @@ git branch -M "main"  //para alterar o nome da branch, no caso para main
 
 git push origin main // para enviar os arquivos para o servido remoto
 
-**********************************
+*****************************
 
 Design patterns são soluções reutilizáveis que não se limitam a um unico problema.
 Elas podem ser reutilizadas para diversos tipo de problemas.
@@ -62,3 +62,8 @@ console.log(numeros); // [ 1, 2, 3, [ 4, 5, [ 6, 7 ] ] ]
 
 console.log(numeros.flat(2));  // [1, 2, 3, 4, 5, 6, 7] - plano: irá deixar os sub-arrays no mesmo nível dos arrays.
 
+
+*****************************
+Arrow function
+
+var sum = (a, b) => a + b;
