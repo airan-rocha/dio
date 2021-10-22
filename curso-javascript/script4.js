@@ -41,6 +41,8 @@ console.log(obj.sub(10, 6));
 console.log(obj.mult(2,4));
 console.log(obj.pow(3,3));
 
+
+
 console.log('################\n');
 
 var sum = (...values) => {
@@ -73,3 +75,40 @@ str(...texto, ...msg);
 
 console.log(texto, msg);
 console.log(...texto);
+
+
+
+console.log('################\n');
+
+var frutas = ['prata', 'gala', 'grauda', ['papaia']];
+
+var [banana, maca, laranja, [mamao]] = frutas;
+
+console.log(banana, maca, laranja, mamao);
+
+var pessoa = {cabelo: "grande", olho: "azul"};
+
+var {cabelo, olho} = pessoa;
+
+console.log(cabelo, olho);
+
+
+var pessoa2 = {cabelo: "grande", olho: "azul", inferior: {perna: "grossa", pes: "grande"}};
+
+var {cabelo, olho, inferior} = pessoa2;
+
+var {perna, pes} = inferior;
+
+console.log(cabelo, olho, perna, pes);
+
+console.log('################\n');
+
+//symbol é um identificador único. Ele aceita um identificador tipo "string", ele serve apenas para sabermos do que o symbol se trata.
+
+const uniqueId = Symbol("hello");
+const uniqueId2 = Symbol("hello");
+
+console.log(uniqueId);
+
+console.log(uniqueId == uniqueId2);  //irá retornar false mesmo tendo o mesmo identificador string, pois cada symbol é unico.
+

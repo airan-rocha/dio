@@ -100,3 +100,29 @@ var msg = '- Eu curto';
 
 str(...texto);
 str(...texto, ...msg);
+
+*****************************
+Destruturing - desestruturação
+
+var frutas = ['prata', 'gala', 'grauda'];
+var [banana, maca, laranja] = frutas;  //cada variável recebe um elemento do array
+
+var frutas = ['prata', 'gala', 'grauda', ['papaia']];  //array de entro de um array
+var [banana, maca, laranja, [mamao]] = frutas;  //nesse caso a variável mamao tem que ficar entre chaves para mostrar que irar acessar um sub-array
+console.log(banana, maca, laranja, mamao);  
+
+var pessoa = {cabelo: "grande", olho: "azul"};
+var {cabelo, olho} = pessoa;  //cada variável recebe um elemento do objeto
+
+
+
+*****************************
+symbol é um identificador único. Ele aceita um identificador tipo "string", 
+ele serve apenas para sabermos do que o symbol se trata.
+
+const uniqueId = Symbol("hello");
+const uniqueId2 = Symbol("hello");
+
+console.log(uniqueId);
+
+console.log(uniqueId == uniqueId2);  //irá retornar false mesmo tendo o mesmo identificador string, pois cada symbol é unico.
