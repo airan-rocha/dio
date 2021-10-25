@@ -112,10 +112,50 @@ console.log(uniqueId);
 
 console.log(uniqueId == uniqueId2);  //irá retornar false mesmo tendo o mesmo identificador string, pois cada symbol é unico.
 
-function* gen() {yield 1; yield 2; yield 3};
+console.log('################\n');
+//generator
+
+function* gen() {
+    yield 1; 
+    yield 2; 
+    yield 3;
+};
 
 var value = gen();
 
-console.log(value.next(value))
 console.log(value.next())
 console.log(value.next())
+console.log(value.next())
+
+function* hello() {
+    console.log("hello");
+    yield 1;
+
+    console.log("from");
+    const value = yield 2;
+
+    console.log("function");
+}
+
+var it = hello();
+
+console.log(it.next());
+console.log(it.next());
+console.log(it.next('Hello'));
+
+function* naturalNumbers(){
+    let number = 0;
+    while(true){
+        yield number;
+        number++;
+    }
+}
+
+const it2 = naturalNumbers();
+
+console.log(it2.next());
+console.log(it2.next());
+console.log(it2.next());
+console.log(it2.next());
+console.log(it2.next());
+console.log(it2.next());
