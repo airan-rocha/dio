@@ -157,3 +157,10 @@ console.log(it2.next());
 console.log(it2.next());
 console.log(it2.next());
 console.log(it2.next());
+
+
+*********************************
+callback and promises
+
+promise (promessa) é processamento assincrono, que representa um valor que poderá estar disponível agora, no futuro ou nunca.  
+

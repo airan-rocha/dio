@@ -159,3 +159,24 @@ console.log(it2.next());
 console.log(it2.next());
 console.log(it2.next());
 console.log(it2.next());
+
+
+//promise
+
+const doSomeThingPromise = () => new Promise((resolve, reject) => {
+    setTimeout(function() {
+        // did something
+        resolve('First data')
+    }, 1500);
+});
+
+const doOtherThingPromise = () => new Promise((resolve, reject) => {
+    setTimeout(function() {
+        // did something
+        resolve('Second data')
+    }, 1500);
+});
+
+Promise.race([doSomeThingPromise(), doOtherThingPromise()]).then(data => {
+    console.log(data);
+});

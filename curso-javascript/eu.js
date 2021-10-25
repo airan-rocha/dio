@@ -57,3 +57,15 @@ var eu = new Pessoa();
 eu.cor = "White";
 
 console.log(`A cor é ${eu.cor}`);
+
+
+function timmer(minutos) {
+    let tempo = minutos * 60;
+
+    var t = setInterval(() => {
+        console.log(tempo);
+        tempo <= 0 ? clearInterval(t) : tempo--;
+    }, 1000);
+}
+
+timmer(0.5);
