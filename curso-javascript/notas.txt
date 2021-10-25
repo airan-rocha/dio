@@ -126,3 +126,34 @@ const uniqueId2 = Symbol("hello");
 console.log(uniqueId);
 
 console.log(uniqueId == uniqueId2);  //irá retornar false mesmo tendo o mesmo identificador string, pois cada symbol é unico.
+
+*****************************
+Generator (função com pausa)- controla a execução da função:
+
+function* gen() {
+    yield 1;    //a palavra reservada yield faz uma pausa na execução
+    yield 2; 
+    yield 3;
+};
+
+var value = gen();
+
+console.log(value.next())  //cada .next() pula para o próximo yield;
+console.log(value.next())
+console.log(value.next())
+
+------------------------------
+function* naturalNumbers(){
+    let number = 0;
+    while(true){        //loop infinito - só será executado quando for chamado no .nex() e será retornado cada número por causa do incremento.
+        yield number;
+        number++;
+    }
+}
+
+const it2 = naturalNumbers();
+
+console.log(it2.next());
+console.log(it2.next());
+console.log(it2.next());
+console.log(it2.next());
