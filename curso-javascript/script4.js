@@ -180,3 +180,29 @@ const doOtherThingPromise = () => new Promise((resolve, reject) => {
 Promise.race([doSomeThingPromise(), doOtherThingPromise()]).then(data => {
     console.log(data);
 });
+
+
+// fetch 
+
+//async and await
+//quando eu coloco async antes da função ela se torna um promise
+
+const asyncTimmer = () => new Promise((resolve, reject) =>{
+    setTimeout(() => {
+        resolve(12345);
+    }, 1000);
+})
+
+const simpleFunc = async () => {
+    const data = await asyncTimmer()
+    return data;
+}
+
+simpleFunc()
+    .then(data => {
+        console.log(data)
+    })
+    .catch(err => {
+        console.log(err);
+    })
+
