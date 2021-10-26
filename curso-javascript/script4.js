@@ -206,3 +206,4 @@ simpleFunc()
         console.log(err);
     })
 
+// throw new Error('Oh no!');

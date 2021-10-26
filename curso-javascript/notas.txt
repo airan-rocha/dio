@@ -164,3 +164,10 @@ callback and promises
 
 promise (promessa) é processamento assincrono, que representa um valor que poderá estar disponível agora, no futuro ou nunca.  
 
+
+*********************************
+Ferramentas para testar meu código
+
+Mocha - estrutura de testes javascript para node.js; 
+chai - biblioteca para trabalhar com o Mocha;
+sinon - biblioteca de suporte chamada;
