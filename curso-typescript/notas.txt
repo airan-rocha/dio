@@ -1,0 +1,3 @@
+Tyscript é como se fosse uma extensão do javascript, é uma ferramenta muito útil que evita você escrever muito código.
+
+//TypeScript - Parcel : ajuda no desenvolvimento. Instala via node.
