@@ -142,3 +142,7 @@ class MeuCachorro implements ICachorro {
 const cao = new MeuCachorro('Apolo', 14);
 
 console.log(`Nome do cachorro: ${cao.nome}\nIdade do cachorro: ${cao.idade}`);
+
+// import {num, textos} from './arquivo';
+
+// console.log(`var num = ${num}\nvar texto = ${textos}`);
