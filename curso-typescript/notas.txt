@@ -1,3 +1,25 @@
 Tyscript é como se fosse uma extensão do javascript, é uma ferramenta muito útil que evita você escrever muito código.
 
 //TypeScript - Parcel : ajuda no desenvolvimento. Instala via node.
+
+
+* para instalar o typescript:
+
+local:
+npm install typescript --save-dev
+ou
+yarn add typescript --dev
+
+global:
+npm install -g typescript
+
+
+* Usamos uma extensão .ts, mas este código é apenas JavaScript. Ou seja, no documento html usaremos o .js veja abaixo.
+
+* Na linha de comando, execute o compilador TypeScript:
+
+npm tsc meuArquivo.ts
+
+* será criado um arquivo .js com o mesmo nome do meuArquivo.ts;
+
+* O meuArquivo.js que foi criado, será colocado no meu documento html.
