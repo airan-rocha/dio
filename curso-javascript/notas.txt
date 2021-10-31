@@ -6,6 +6,26 @@ git reset código_commit
 
 git restore *     //para restaurar todos os arquivos para a versão do commit atual.
 
+
+*****
+Ignorar arquivos no git. Serve para o git não gerenciar determinador arquivos escolhidos pelo usuário. Um bom exemplo são os arquivos dentro do diretório node_modules. Não há necessidade de salvar esses arquivos no git/github pois eles podem ser instalados/restaurados com um comando npm install.
+
+touch .gitignore  //cria o arquivo .gitignore no qual ao colocar o nome dos arquivos e ou diretórios, eles são ignorados pelo git.
+
+Exemplo:
+
+# node.js   //# serve como comentário
+#
+node_modules/  //diretório a ser ignorado
+npm-debug.log  //arquivo a ser ignorado
+yarn-error.log
+
+obs: se deseja ignorar um arquivo que já foi ingressado, digite o comando:
+
+git rm --cached FILENAME  //para ignorar arquivo igressado
+
+git rm -r --cached FOLDERNAME //para ignorar pasta igressada. Foi adcionado o -r (recursive)
+
 ######
 
 Comando git para adcionar/trocar servidor remote
