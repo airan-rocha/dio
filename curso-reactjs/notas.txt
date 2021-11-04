@@ -7,11 +7,55 @@ npx create-react-app my-app
 cd my-app
 npm start
 
+------------
 Quando estiver pronto pra mandar pra produção, rode:
 
 npm run build
 
 Esse comando ira criar e mandar o build otimizado de seu app para a pasta build.
+
+------------
+
+Webpack - ( https://webpack.js.org/guides/getting-started/ ) é um modulo empacotador estático para aplicações javascript modernas.
+
+//instalando  o webpack:
+
+npm install webpack webpack-cli --save-dev
+
+
+//crie o arquivo: webpack.config.js
+
+//dentro do arquivo coloque:
+
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',  //esse é o javascript padrão da minha aplicação.
+  output: {
+    path: path.resolve(__dirname, 'dist'),   //dist é o nome da pasta de distribuição, por convenção, deixa essa mesmo.
+    filename: 'bundle.js',   //bundle.js é o nome do meu arquivo empacotador.
+  },
+};
+
+
+//em package.json coloque o 'build' dentro de scripts:
+
+"scripts": {
+    "build": "webpack --mode production"  //"build" se estiver ocupado, coloque outro (build2 por exemplo) nome e de o mesmo comando
+  },
+
+
+//no terminal, excute o comando:
+
+npm run build
+
+
+---------------
+//instalando o babel
+
+npm install @babel/core babel-loader @babel/preset-env @babel/preset-react --save-dev
+
+
 
 ********************************
 //estrutura padrão do index.js
