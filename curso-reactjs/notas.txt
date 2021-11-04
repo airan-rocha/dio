@@ -1,3 +1,96 @@
 instalação do  reactjs:
 
 npm install --save react@16.8.6 react-dom@16.8.6 react-scripts@3.0.1
+
+//cria um novo react-app ("my-app" é o nome do nosso projeto)
+npx create-react-app my-app
+cd my-app
+npm start
+
+Quando estiver pronto pra mandar pra produção, rode:
+
+npm run build
+
+Esse comando ira criar e mandar o build otimizado de seu app para a pasta build.
+
+********************************
+//estrutura padrão do index.js
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import "./styles.css";
+
+const App = () => {
+    return (
+        <div className="App">
+            Hello World
+        </div>
+    )
+}
+
+const rootElement = document.getElementById("root")
+ReactDOM.render(<App />, rootElement)
+
+********************************
+todas as funções javascript devem ficar entre chaves para ser executada no html. veja o exemplo:
+
+function primeroJSX() {
+    return (
+        <div>
+            Introdução ao reactjs
+        </div>
+    )
+}
+
+const App = () => {
+    return (
+        <div className="App">
+            Hello World  
+            {primeroJSX()}  //função javascript detro das chaves
+        </div>
+    )
+}
+
+********************************
+//componente jsx
+//O componente tem que começar com letra maiúscula, obrigatório.
+
+function Button(props){
+    const {onClick, name} = props
+
+    return(
+        <button onClick={onClick}>{name}</button>
+    )
+}
+
+const App = () => {
+    return (
+        <div className="App">
+             <Button onClick={() => {}} name="nome do bt" />
+        </div>
+    )
+}
+
+********************************
+//children - tudo o que eu passar dentro do meu componente poderá ser acessado pelo children
+
+
+function ComponenteA(props){
+    const {titulo} = props
+    return(
+        <div>
+            <h2>{titulo}</h2>
+            {props.children}
+        </div>
+    )
+}
+
+const App = () => {
+    return (
+        <div className="App">
+            <ComponenteA titulo="oi">
+                <p>meu componente</p>
+            </ComponenteA>
+        </div>
+    )
+}
