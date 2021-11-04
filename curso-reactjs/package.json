@@ -6,17 +6,22 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "babel-loader": "^8.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "webpack": "^4.44.2",
+    "webpack-dev-server": "^3.11.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "builder": "webpack --mode production"
+    "builder": "webpack --mode production",
+    "dev": "webpack --mode development",
+    "start:dev": "webpack-dev-server"
   },
   "eslintConfig": {
     "extends": [
@@ -40,8 +45,6 @@
     "@babel/core": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
-    "babel-loader": "^8.1.0",
-    "webpack": "^4.44.2",
     "webpack-cli": "^4.9.1"
   }
 }

@@ -57,6 +57,24 @@ npm install @babel/core babel-loader @babel/preset-env @babel/preset-react --sav
 
 
 
+//criar .Babelrc
+//detro de .Babelrc colocar:
+
+{
+    "presets": [
+        "@babel/preset-env",
+        "@babel/preset-react"
+    ]
+}
+
+//rodar comando:
+
+npm install react react-dom
+
+
+npm i -D webpack-dev-server
+
+
 ********************************
 //estrutura padrão do index.js
 

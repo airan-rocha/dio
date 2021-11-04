@@ -1,9 +1,5 @@
 # node.js
 #
-curso-typescript/node_modules/
-curso-typescript/npm-debug.log
-curso-typescript/yarn-error.log
-
-curso-reactjs/node_modules/
-curso-reactjs/npm-debug.log
-curso-reactjs/yarn-error.log
+node_modules
+npm-debug.log
+yarn-error.log
