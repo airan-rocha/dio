@@ -1,0 +1,22 @@
+
+BootStrap - design e customização para sites, mobile-first
+https://getbootstrap.com/
+
+
+//componente filho - children
+
+const Item = (props) => {  //eu também posso chamar o children diretamente (desestruturação): const Item = ({childre}) =>
+    return (
+        <a href="#" className="list-group-item list-group-item-action list-group-item-info">
+            {props.children}  //com a desestruturação fica assim: {children}
+        </a>
+    )
+}
+
+export default Item;
+
+//usando o componente
+<Item>
+    Item 1  //esse é o componente filho. Básicamente, foi criado um tag html que se comporta como eu quero
+</Item>
+
