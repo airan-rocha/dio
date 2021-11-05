@@ -1,0 +1,28 @@
+//css in JS
+npm install --save styled-components
+
+Momenclatura de componentes
+Stateful: o componente usa estados
+Stateless: o componente não usa estados
+
+
+blibliotecas de forms (formulários) para React:
+
+- Formik (essa bliblioteca é recomendada pelo react)
+- Redux-forms (recomendado para quem utiliza forms robustos)
+
+----------------------------
+
+Flux - arquitetura criado pelo facebook - é uma padrão de projeto para tráfego de dados de maneira unidirecional.
+//As bibliotecas baseadas em Flux serve para comunicação entre componentes
+
+----------------------------
+Redux - é uma implementação do Flux
+
+pacotes que devem ser instalados para o Redux funcionar:
+
+npm install react-Redux
+npm install --save-dev redux-devtools
+
+instalar no google chrome a extensão:
+Redux DevTool
