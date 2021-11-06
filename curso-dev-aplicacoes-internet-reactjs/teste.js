@@ -6,7 +6,7 @@ const soma = (...numbers) => {  // rest: ...nomeParametro
     numbers.forEach(n => {
         resultado+= n;
     });
-
+    // debugger
     return resultado;
 }
 

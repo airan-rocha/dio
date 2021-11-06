@@ -20,6 +20,8 @@ Flux - arquitetura criado pelo facebook - é uma padrão de projeto para tráfeg
 Redux - é uma implementação do Flux
 Imutabilidade é um pré-requisito no redux
 
+https://www.treinaweb.com.br/blog/o-que-e-redux
+
 pacotes que devem ser instalados para o Redux funcionar:
 
 npm install react-Redux
@@ -30,3 +32,27 @@ Redux DevTool
 
 ---------------------------
 Immutable.JS - biblioteca mais utilizada para para extrutura imutável no javascript
+
+
+jest-cucumber - ferramenta para teste de aplicação em nuvem
+//intale a extensão do cucumber no vscode
+
+
+--------------------------
+Debuggin - processo de encontrar e reduzir erros em um sistema
+
+Quando colocamos (debugger) no nosso código, podemos utilizar a ferramenta de debugger do navegador
+
+const soma = (...numbers) => {  // rest: ...nomeParametro
+    let resultado= 0;
+    
+    numbers.forEach(n => {
+        resultado+= n;
+    });
+    debugger    //aqui começa o nosso teste no navegador
+    return resultado;
+}
+
+console.log(soma(10, 4, 3, 5, 6));
+
+--------------------------
