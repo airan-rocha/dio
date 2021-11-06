@@ -18,6 +18,7 @@ Flux - arquitetura criado pelo facebook - é uma padrão de projeto para tráfeg
 
 ----------------------------
 Redux - é uma implementação do Flux
+Imutabilidade é um pré-requisito no redux
 
 pacotes que devem ser instalados para o Redux funcionar:
 
@@ -26,3 +27,6 @@ npm install --save-dev redux-devtools
 
 instalar no google chrome a extensão:
 Redux DevTool
+
+---------------------------
+Immutable.JS - biblioteca mais utilizada para para extrutura imutável no javascript
