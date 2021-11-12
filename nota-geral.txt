@@ -1,0 +1,26 @@
+styled-components = css no react;
+npm install --save styled-components
+
+import styled from 'styled-components';
+
+const Content = styled.div` //foi criado um componente react que é uma div estilizada com css
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+`;
+
+
+***************************
+Momenclatura de componentes
+Stateful: o componente usa estados
+Stateless: o componente não usa estados
+
+***************************
+blibliotecas de forms (formulários) para React:
+
+- Formik (essa bliblioteca é recomendada pelo react)
+- Redux-forms (recomendado para quem utiliza forms robustos)
