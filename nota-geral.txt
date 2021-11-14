@@ -24,3 +24,9 @@ blibliotecas de forms (formulários) para React:
 
 - Formik (essa bliblioteca é recomendada pelo react)
 - Redux-forms (recomendado para quem utiliza forms robustos)
+
+
+***************************
+npx create-react-app my-app
+cd my-app
+npm start
